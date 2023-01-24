@@ -1,0 +1,26 @@
+/*  DEFINE ANIMATIONS HERE */
+
+
+
+/*  Wiggle Horizontally (needs to work relative to the element's position) */
+@keyframes wiggle-h {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5em);
+    }
+    50% {
+        transform: translateX(5em);
+    }
+    75% {
+        transform: translateX(-5em);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.wiggle-h {
+    animation: wiggle-h .7s ease-in-out forwards;
+}
