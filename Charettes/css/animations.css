@@ -24,3 +24,293 @@
 .wiggle-h {
     animation: wiggle-h .7s ease-in-out forwards;
 }
+
+
+
+
+@keyframes flip {
+    0% {
+        transform: rotate3d(0, 1, 0, 0deg);
+    }
+    100% {
+        transform: rotate3d(0, 1, 0, 360deg);
+    }
+}
+
+.flip {
+    animation: flip 1s ease-in-out forwards;
+}
+
+
+
+
+/* keyframe animations for 20 different animations */
+/* ANIMATIONS: */
+
+
+/* Wobble */
+@keyframes wobble {
+    0% {
+        transform: translateX(0);
+    }
+    15% {
+        transform: translateX(-25%) rotate(-5deg);
+    }
+    30% {
+        transform: translateX(20%) rotate(3deg);
+    }
+    45% {
+        transform: translateX(-15%) rotate(-3deg);
+    }
+    60% {
+        transform: translateX(10%) rotate(2deg);
+    }
+    75% {
+        transform: translateX(-5%) rotate(-1deg);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.wobble {
+    animation: wobble 1s ease-in-out forwards;
+}
+
+
+/* Bounce */
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    10% {
+        transform: translateY(0);
+    }
+    30% {
+        transform: translateY(-15px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    57% {
+        transform: translateY(-4px);
+    }
+    64% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.bounce {
+    animation: bounce 1s ease-in-out forwards;
+}
+
+
+/* Grow */
+
+@keyframes grow {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.grow {
+    animation: grow 1s ease-in-out forwards;
+}
+
+/* shrink */
+
+@keyframes shrink {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+/* pulse */
+
+@keyframes pulse-red {
+    0% {
+        background-color: var(--z-dark-red);
+    }
+    50% {
+        background-color: var(--z-light-red);
+    }
+    100% {
+        background-color: var(--z-dark-red);
+    }
+}
+
+.pulse-red {
+    animation: pulse-red 1s ease-in-out forwards;
+}
+
+@keyframes pulse-orange {
+    0% {
+        background-color: var(--z-dark-orange);
+    }
+    50% {
+        background-color: var(--z-light-orange);
+    }
+    100% {
+        background-color: var(--z-dark-orange);
+    }
+}
+
+.pulse-orange {
+    animation: pulse-orange 1s ease-in-out forwards;
+}
+
+@keyframes pulse-blue {
+    0% {
+        background-color: var(--z-dark-blue);
+    }
+    50% {
+        background-color: var(--z-light-blue);
+    }
+    100% {
+        background-color: var(--z-dark-blue);
+    }
+}
+
+.pulse-blue {
+    animation: pulse-blue 1s ease-in-out forwards;
+}
+
+
+/* tada */
+
+@keyframes tada {
+    0% {
+        transform: scale(1) rotate(0);
+    }
+    10%,
+    20% {
+        transform: scale(.9) rotate(-3deg);
+    }
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: scale(1.1) rotate(3deg);
+    }
+    40%,
+    60%,
+    80% {
+        transform: scale(1.1) rotate(-3deg);
+    }
+    100% {
+        transform: scale(1) rotate(0);
+    }
+}
+
+.tada {
+    animation: tada 1s ease-in-out forwards;
+}
+
+/* hinge */
+
+@keyframes hinge {
+    0% {
+        transform-origin: top left;
+        transform: rotate(0deg);
+    }
+    20%,
+    60% {
+        transform-origin: top left;
+        transform: rotate(80deg);
+    }
+    40%,
+    80% {
+        transform-origin: top left;
+        transform: rotate(60deg);
+    }
+    100% {
+        transform-origin: top left;
+        transform: rotate(60deg) translateX(700px);
+    }
+}
+
+.hinge {
+    animation: hinge 1s ease-in-out forwards;
+}
+
+
+/* rollin */
+
+@keyframes rollin {
+    0% {
+        transform: rotate(-120deg) translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: rotate(0deg) translateX(0);
+        opacity: 1;
+    }
+}
+
+.rollin {
+    animation: rollin 1s ease-in-out forwards;
+}
+
+
+
+
+
+
+/*  Wiggle Vertically (needs to work relative to the element's position) */
+@keyframes wiggle-v {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-5em);
+    }
+    50% {
+        transform: translateY(5em);
+    }
+    75% {
+        transform: translateY(-5em);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.wiggle-v {
+    animation: wiggle-v .7s ease-in-out forwards;
+}
+
+
+/* fill page */
+
+@keyframes fill-page {
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(100);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.fill-page {
+    animation: fill-page 1s ease-in-out forwards;
+}

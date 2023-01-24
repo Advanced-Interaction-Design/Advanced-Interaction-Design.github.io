@@ -27,3 +27,10 @@ body {
 .center-flex .emoji {
     font-size: 2rem;
 }
+
+div.cell p {
+    text-align: center;
+}
+
+
+

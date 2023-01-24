@@ -3,6 +3,17 @@
     transition: color .5s, background-color .5s;
 }
 
+.deleted {
+    opacity: 0;
+}
+
+body {
+    border: 10px solid white;
+}
+.delete-mode {
+    cursor:crosshair !important;
+    border: 10px solid red !important;
+}
 
 
 /* SOME USEFUL STYLES */
@@ -99,27 +110,26 @@
 
 #cell-2 {
     background-color: var(--z-medium-blue);
-    cursor: pointer;
 
 }
 
 #cell-3 {
     background-color: var(--z-light-blue);
-    cursor: pointer;
 
 }
 
 #cell-4 {
     background-color: var(--z-beige);
-    cursor: pointer;
 }
 
 #cell-5 {
     background-color: var(--z-light-orange);
+
 }
 
 #cell-6 {
     background-color: var(--z-dark-orange);
+
 }
 
 #cell-7 {

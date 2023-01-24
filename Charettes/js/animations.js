@@ -1,3 +1,5 @@
+
+
 function wiggle_h(clicked_cell) {
     if (!$(clicked_cell).hasClass("wiggle-h")) {
         console.log("cell clicked");
@@ -97,3 +99,151 @@ function crash_the_page() {
 
 
 }
+
+
+function flip(clicked_cell) {
+    if (!$(clicked_cell).hasClass("flip")) {
+        $(clicked_cell).addClass("flip");
+        // then, after 1 seconds, remove the class
+        setTimeout(function () {
+            $(clicked_cell).removeClass("flip");
+        }
+        , 1000);
+    }
+}
+
+
+function wobble(clicked_cell) {
+    if (!$(clicked_cell).hasClass("wobble")) {
+        $(clicked_cell).addClass("wobble");
+        // then, after 1 seconds, remove the class
+        setTimeout(function () {
+            $(clicked_cell).removeClass("wobble");
+        }
+        , 1000);
+    }
+}
+
+function bounce(clicked_cell) {
+    if (!$(clicked_cell).hasClass("bounce")) {
+        $(clicked_cell).addClass("bounce");
+        // then, after 1 seconds, remove the class
+        setTimeout(function () {
+            $(clicked_cell).removeClass("bounce");
+        }
+        , 1000);
+    }
+}
+
+function grow(clicked_cell) {
+    if (!$(clicked_cell).hasClass("grow")) {
+        $(clicked_cell).addClass("grow");
+        // then, after 1 seconds, remove the class
+        setTimeout(function () {
+            $(clicked_cell).removeClass("grow");
+        }
+        , 1000);
+    }
+}
+
+function shrink(clicked_cell) {
+    if (!$(clicked_cell).hasClass("shrink")) {
+        $(clicked_cell).addClass("shrink");
+        // then, after 1 seconds, remove the class
+        setTimeout(function () {
+            $(clicked_cell).removeClass("shrink");
+        }
+        , 1000);
+    }
+}
+
+function pulse_red(clicked_cell) {
+    if (!$(clicked_cell).hasClass("pulse-red")) {
+        $(clicked_cell).addClass("pulse-red");
+        // then, after 1 seconds, remove the class
+        setTimeout(function () {
+            $(clicked_cell).removeClass("pulse-red");
+        }
+        , 1000);
+    }
+}
+
+function pulse_blue(clicked_cell) {
+    if (!$(clicked_cell).hasClass("pulse-blue")) {
+        $(clicked_cell).addClass("pulse-blue");
+        // then, after 1 seconds, remove the class
+        setTimeout(function () {
+            $(clicked_cell).removeClass("pulse-blue");
+        }
+        , 1000);
+    }
+}
+
+function pulse_orange(clicked_cell) {
+    if (!$(clicked_cell).hasClass("pulse-orange")) {
+        $(clicked_cell).addClass("pulse-orange");
+        // then, after 1 seconds, remove the class
+        setTimeout(function () {
+            $(clicked_cell).removeClass("pulse-orange");
+        }
+        , 1000);
+    }
+}
+
+function tada(clicked_cell) {
+    if (!$(clicked_cell).hasClass("tada")) {
+        $(clicked_cell).addClass("tada");
+        // then, after 1 seconds, remove the class
+        setTimeout(function () {
+            $(clicked_cell).removeClass("tada");
+        }
+        , 1000);
+    }
+}
+
+function hinge(clicked_cell) {
+    if (!$(clicked_cell).hasClass("hinge")) {
+        $(clicked_cell).addClass("hinge");
+        // then, after 1 seconds, remove the class
+        setTimeout(function () {
+            $(clicked_cell).removeClass("hinge");
+        }
+        , 1000);
+    }
+}
+
+function rollin(clicked_cell) {
+    if (!$(clicked_cell).hasClass("rollin")) {
+        $(clicked_cell).addClass("rollin");
+        // then, after 1 seconds, remove the class
+        setTimeout(function () {
+            $(clicked_cell).removeClass("rollin");
+        }
+        , 1000);
+    }
+}
+
+
+
+function wiggle_v(clicked_cell) {
+    if (!$(clicked_cell).hasClass("wiggle-v")) {
+        $(clicked_cell).addClass("wiggle-v");
+        // then, after 1 seconds, remove the class
+        setTimeout(function () {
+            $(clicked_cell).removeClass("wiggle-v");
+        }
+        , 1000);
+    }
+}
+
+function fill_page(clicked_cell) {
+    if (!$(clicked_cell).hasClass("fill-page")) {
+        $(clicked_cell).addClass("fill-page");
+        // then, after 1 seconds, remove the class
+        setTimeout(function () {
+            $(clicked_cell).removeClass("fill-page");
+        }
+        , 1000);
+    }
+}
+
