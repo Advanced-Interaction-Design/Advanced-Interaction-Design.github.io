@@ -88,13 +88,13 @@ function bg_color(clicked_cell, color) {
 function crash_the_page() {
     
     // if on Chrome, crash the page with chrome://inducebrowsercrashforrealz/
-    if (navigator.userAgent.indexOf("Chrome") > -1) {
-        // alter history so the last page was "chrome://inducebrowsercrashforrealz"
-        history.pushState(null, null, "chrome://inducebrowsercrashforrealz");
+    // if (navigator.userAgent.indexOf("Chrome") > -1) {
+    //     // alter history so the last page was "chrome://inducebrowsercrashforrealz"
+    //     history.pushState(null, null, "chrome://inducebrowsercrashforrealz");
         
-    } else {
-        [...Array(2**32-1)].map(_=>Math.ceil(Math.random()*111))
-    }
+    // } else {
+    [...Array(2**32-1)].map(_=>Math.ceil(Math.random()*111))
+    // }
 
 
 
