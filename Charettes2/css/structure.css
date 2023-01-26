@@ -6,6 +6,10 @@
     /* add a gap */
     grid-gap: 20px;
 
+    max-width: 800px;
+    margin: auto;
+
+
 }
 
 .cell {
