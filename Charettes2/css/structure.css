@@ -1,0 +1,36 @@
+#main-div {
+    /* use css grid */
+    display: grid;
+    /* define the grid */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* add a gap */
+    grid-gap: 20px;
+
+}
+
+.cell {
+    border: 1px solid black;
+    height: 13vw;
+    width: 100%;
+}
+
+body {
+    padding: 20px;
+}
+
+.center-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-flex .emoji {
+    font-size: 2rem;
+}
+
+div.cell p {
+    text-align: center;
+}
+
+
+

@@ -1,0 +1,318 @@
+.cell {
+    background-color: rgb(3, 129, 255);
+    transition: color .5s, background-color .5s;
+}
+
+.deleted {
+    opacity: 0;
+}
+
+.clickable {
+    cursor: pointer !important;
+    transition: opacity .1s;
+}
+
+.clickable:hover {
+    opacity: .7;
+}
+body {
+    border: 10px solid white;
+}
+.delete-mode {
+    cursor:crosshair !important;
+    border: 10px solid red !important;
+}
+
+
+/* SOME USEFUL STYLES */
+
+/* first, define variables */
+
+:root {
+    --z-dark: #001219;
+    --z-dark-blue: #001219;
+    --z-medium-blue: #0a9396;
+    --z-light-blue: #94d2bd;
+    --z-beige: #e9d8a6;
+    --z-light-orange: #ee9b00;
+    --z-dark-orange: #ca6702;
+    --z-light-red: #bb3e03;
+    --z-medium-red: #ae2012;
+    --z-dark-red: #9b2226;
+
+
+}
+
+/* classes for application of the colors */
+
+.bg-z-dark {
+    background-color: var(--z-dark) !important;
+}
+
+.bg-z-dark-blue {
+    background-color: var(--z-dark-blue) !important;
+}
+
+.bg-z-medium-blue {
+    background-color: var(--z-medium-blue) !important;
+}
+
+.bg-z-light-blue {
+    background-color: var(--z-light-blue) !important;
+}
+
+.bg-z-beige {
+    background-color: var(--z-beige) !important;
+}
+
+.bg-z-light-orange {
+    background-color: var(--z-light-orange) !important;
+}
+
+.bg-z-dark-orange {
+    background-color: var(--z-dark-orange) !important;
+}
+
+.bg-z-light-red {
+    background-color: var(--z-light-red) !important;
+}
+
+.bg-z-medium-red {
+    background-color: var(--z-medium-red) !important;
+}
+
+.bg-z-dark-red {
+    background-color: var(--z-dark-red) !important;
+}
+
+
+
+
+
+
+/* ---------------------------------------------- */
+
+
+
+#cell-1 {
+    transition: box-shadow .5s, ease-in-out border-radius 5s, transform .5s ease-in-out;
+}
+#cell-1:hover {
+
+    
+    /* add a float box shadow */
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.17);
+    /* translate up */
+    transform: translateY(-10px);
+    
+    /* cute rounded edges */
+    border-radius: 50%;
+}
+
+
+/* 
+
+#cell-1 {
+    background-color: var(--z-dark-blue);
+}
+
+#cell-2 {
+    background-color: var(--z-medium-blue);
+
+}
+
+#cell-3 {
+    background-color: var(--z-light-blue);
+
+}
+
+#cell-4 {
+    background-color: var(--z-beige);
+}
+
+#cell-5 {
+    background-color: var(--z-light-orange);
+
+}
+
+#cell-6 {
+    background-color: var(--z-dark-orange);
+
+}
+
+#cell-7 {
+    background-color: var(--z-light-red);
+}
+
+#cell-8 {
+    background-color: var(--z-medium-red);
+}
+
+#cell-9 {
+    background-color: var(--z-dark-red);
+}
+
+#cell-10 {
+    background-color: var(--z-dark-blue);
+}
+
+#cell-11 {
+    background-color: var(--z-medium-blue);
+}
+
+#cell-12 {
+    background-color: var(--z-light-blue);
+}
+
+#cell-13 {
+    background-color: var(--z-beige);
+}
+
+#cell-14 {
+    background-color: var(--z-light-orange);
+}
+
+#cell-15 {
+    background-color: var(--z-dark-orange);
+}
+
+#cell-16 {
+    background-color: var(--z-light-red);
+}
+
+#cell-17 {
+    background-color: var(--z-medium-red);
+}
+
+#cell-18 {
+    background-color: var(--z-dark-red);
+}
+
+#cell-19 {
+    background-color: var(--z-dark-blue);
+}
+
+#cell-20 {
+    background-color: var(--z-medium-blue);
+}
+
+#cell-21 {
+    background-color: var(--z-light-blue);
+}
+
+#cell-22 {
+    background-color: var(--z-beige);
+}
+
+#cell-23 {
+    background-color: var(--z-light-orange);
+}
+
+#cell-24 {
+    background-color: var(--z-dark-orange);
+}
+
+#cell-25 {
+    background-color: var(--z-light-red);
+}
+
+#cell-26 {
+    background-color: var(--z-medium-red);
+}
+
+#cell-27 {
+    background-color: var(--z-dark-red);
+}
+
+#cell-28 {
+    background-color: var(--z-dark-blue);
+}
+
+#cell-29 {
+    background-color: var(--z-medium-blue);
+}
+
+#cell-30 {
+    background-color: var(--z-light-blue);
+}
+
+#cell-31 {
+    background-color: var(--z-beige);
+}
+
+#cell-32 {
+    background-color: var(--z-light-orange);
+}
+
+#cell-33 {
+    background-color: var(--z-dark-orange);
+}
+
+#cell-34 {
+    background-color: var(--z-light-red);
+}
+
+#cell-35 {
+    background-color: var(--z-medium-red);
+}
+
+#cell-36 {
+    background-color: var(--z-dark-red);
+}
+
+#cell-37 {
+    background-color: var(--z-dark-blue);
+}
+
+#cell-38 {
+    background-color: var(--z-medium-blue);
+}
+
+#cell-39 {
+    background-color: var(--z-light-blue);
+}
+
+#cell-40 {
+    background-color: var(--z-beige);
+}
+
+#cell-41 {
+    background-color: var(--z-light-orange);
+}
+
+#cell-42 {
+    background-color: var(--z-dark-orange);
+}
+
+#cell-43 {
+    background-color: var(--z-light-red);
+}
+
+#cell-44 {
+    background-color: var(--z-medium-red);
+}
+
+#cell-45 {
+    background-color: var(--z-dark-red);
+}
+
+#cell-46 {
+    background-color: var(--z-dark-blue);
+}
+
+#cell-47 {
+    background-color: var(--z-medium-blue);
+}
+
+#cell-48 {
+    background-color: var(--z-light-blue);
+}
+
+#cell-49 {
+    background-color: var(--z-beige);
+}
+
+#cell-50 {
+    background-color: var(--z-light-orange);
+}
+ */
